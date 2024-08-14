@@ -5,26 +5,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Witch Tuition</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="scripthandler.js"></script>
 </head>
 <body class="witchbackground">
-    <div class="container">
-        <div>
+    <div class="bodypage">
+        <div class="center-on-mobile">
             <img style="width: 704px; height: 172px;" src="Images/Logo.png" />
         </div>
 
         <div style="width: 1030px; height: 98px; position: relative;" class="container">
-            <img style="width: 983px; height: 93px; position: absolute;" src="Images/links.png" />
-            <div class="navrow">
-                <a href="/WitchTuition/index.html" class="navlink">Home</a>
-                <a href="/WitchTuition/blog.html" class="navlink">Blog</a>
-                <a href="/WitchTuition/media.html" class="navlink">Screenshots</a>
-                <a href="/WitchTuition/socials.html" class="navlink">Socials</a>
-            </div>
+            <img style="width: 1030px; height: 98px; position: absolute;" src="Images/links.png" />
+            <nav>
+                <ul>
+                    <input type="checkbox" id="sidebar-active" class="navlink">
+                    <div class="navrow">
+                        <label for="sidebar-active" class="navlink close-sidebar">
+                            <i class="fa-solid fa-xmark" style="color: #29140f; font-size: 3rem;"></i>
+                        </label>
+                        <a href="/WitchTuition/index.html" class="navlink hideOnMobile">Home</a>
+                        <a href="/WitchTuition/blog.html" class="navlink hideOnMobile">Blog</a>
+                        <a href="/WitchTuition/media.html" class="navlink hideOnMobile">Screenshots</a>
+                        <a href="/WitchTuition/socials.html" class="navlink hideOnMobile">Socials</a>
+                    </div>
+
+                    <label for="sidebar-active" class="navlink open-sidebar">
+                        <i class="fa-solid fa-bars" style="color: #29140f; font-size: 3rem;"></i>
+                    </label>
+                </ul>
+            </nav>
         </div>
 
-        <div style="width: 1014px; height: 579px;" class="container">
-            <img style="width: 1014px; height: 579px;  position: absolute" src="Images/vid display.png" />
-            <iframe width="783px" height="440px" style=" position: absolute;" src="https://www.youtube.com/embed/IcTr_Zma2gE?si=QjAxJwT4XlDH3BLq" title="WitchTuition Devlog 3 CAPITALISM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div style="width: 1024px; height: 576px;" class="container">
+            <img style="width: 1024px; height: 576px;  position: absolute; border: 7px solid #35180e; border-radius: 5px;" src="Images/vid display.png" />
+            <iframe width="720px" height="405px" style=" position: absolute;" src="https://www.youtube.com/embed/IcTr_Zma2gE?si=QjAxJwT4XlDH3BLq" title="WitchTuition Devlog 3 CAPITALISM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="entrybox updateblock" style="margin: 0;">
             <h2><b>START BREWING!</b></h2>
@@ -32,27 +45,30 @@
                 Team potions and magic as you build up your potion shop's reputation! 
                 Do you have the resolute to become an alchemist?  
             </p>
+            <h2><b>STORY</b></h2>
+            <p>Navigate as Lucina to cultivate potions for a Masters Alchemy License. However tuition and bills are 
+                expensive, so lets run a shop under an "apprenticeship" and gather the supplies ourselves! Shouldnt be too hard, the forrest is bountyful!    
+            </p>
             <h2><b>FEATURES</b></h2>
             <div style="display: flex; flex-direction: column; align-items: flex-start;">
                 <div class="navrow" style="gap: 0;">
-                    <img src="Images/cons_2.png" style="width: 2rem; height: 2rem; " >
+                    <img src="Images/cons_2.png" style="width: 2rem; height: 2rem; ">
                     <p style="margin: 0;">Craft and Sell Potions, or keep them for yourself!</p>
                 </div>
                 <div class="navrow" style="gap: 0;">
-                    <img src="Images/cons_2.png" style="width: 2rem; height: 2rem; " >
+                    <img src="Images/cons_2.png" style="width: 2rem; height: 2rem; ">
                     <p style="margin: 0;">Learn ranges of spells and psionics for combat</p>
                 </div>
                 <div class="navrow" style="gap: 0;">
-                    <img src="Images/cons_2.png" style="width: 2rem; height: 2rem; " >
-                    <p style="margin: 0;">Manage your shop and decorate!</p>
+                    <img src="Images/cons_2.png" style="width: 2rem; height: 2rem; ">
+                    <p style="margin: 0;" >Manage your shop and decorate!</p>
                 </div>
                 <div class="navrow" style="gap: 0;">
-                    <img src="Images/cons_2.png" style="width: 2rem; height: 2rem; " >
+                    <img src="Images/cons_2.png" style="width: 2rem; height: 2rem; ">
                     <p style="margin: 0;">Meet all kinds of adventurers as you raise your reputation!</p>
                 </div>
             </div>
         </div>
     </div>
-
  </body>
 </html>
