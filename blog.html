@@ -2,25 +2,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <title>WitchTuition | Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Witch Tuition | Blog</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="scripthandler.js"></script>
 </head>
 <body class="witchbackground">
-    <div class="container">
-        <div>
+    <div class="bodypage">
+        <div class="center-on-mobile">
             <img style="width: 704px; height: 172px;" src="Images/Logo.png" />
         </div>
 
         <div style="width: 1030px; height: 98px; position: relative;" class="container">
-            <img style="width: 983px; height: 93px; position: absolute;" src="Images/links.png" />
-            <div class="navrow">
-                <a href="/WitchTuition/index.html" class="navlink">Home</a>
-                <a href="/WitchTuition/blog.html" class="navlink">Blog</a>
-                <a href="/WitchTuition/media.html" class="navlink">Screenshots</a>
-                <a href="/WitchTuition/socials.html" class="navlink">Socials</a>
-            </div>
+            <img style="width: 1030px; height: 98px; position: absolute;" src="Images/links.png" />
+            <nav>
+                <ul>
+                    <input type="checkbox" id="sidebar-active" class="navlink">
+                    <div class="navrow">
+                        <label for="sidebar-active" class="navlink close-sidebar">
+                            <i class="fa-solid fa-xmark" style="color: #29140f; font-size: 3rem;"></i>
+                        </label>
+                        <a href="/WitchTuition/index.html" class="navlink hideOnMobile">Home</a>
+                        <a href="/WitchTuition/blog.html" class="navlink hideOnMobile">Blog</a>
+                        <a href="/WitchTuition/media.html" class="navlink hideOnMobile">Screenshots</a>
+                        <a href="/WitchTuition/socials.html" class="navlink hideOnMobile">Socials</a>
+                    </div>
+
+                    <label for="sidebar-active" class="navlink open-sidebar">
+                        <i class="fa-solid fa-bars" style="color: #29140f; font-size: 3rem;"></i>
+                    </label>
+                </ul>
+            </nav>
         </div>
+
         <!-- Entries Here -->
                 <!-- Blog entry -->
             <div class="entrybox updateblock">
@@ -28,7 +42,16 @@
                 <i style="font-size: 0.8rem; margin-bottom: 0.2rem;">August 13, 2024</i>
                 <br>
                 <img src="Images/placeholder.png">
-                <p></p>
+                <p>Hello Visitors!</p>
+                <p style="margin-bottom: 1rem;">I made this website to better track the development progress in my game Witch Tuition!</p>
+                <p style="margin-bottom: 1rem;">Ive never made a website before so ill still try to update the look of this place while adding new posts and progresses.
+                    Twitter and youtube only felt like the places I COULD post updates on, but I share more updates casually that would take forever to keep up with devlogs for.
+                    The hosting site might change too if I need to like add comments or more storage but ill be figuring it out! 
+                </p>
+                <p style="margin-bottom: 1rem;">
+                    I hope you can keep this site in mind and take a peak when updates come! ill try to also get past updates when im free to for archiving!
+                    Until then, I hope you guys stick around! :D
+                </p>
             </div>
         <!-- Entries End -->
     </div>

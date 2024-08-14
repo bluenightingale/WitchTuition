@@ -11,10 +11,23 @@ body{
   }
 
   .container{
-	display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+	  display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    gap: 1em;
+  }
+
+  .bodypage{
+    max-width: 900px;
+    margin: 0 auto;
+	  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 1em;
   }
 
@@ -53,15 +66,48 @@ body{
   .navlink:hover{
     color: white;
     transform: scale(1.1);
+    /* background-color: var(--accent-color); */
+  }
+
+  .sidebar{
+    position: fixed;
+    height: 30vh;
+    width: 250px;
+    z-index: 999;
+    border: 7px solid #734932;
+    border-style: groove;
+    border-radius: 5px;
+    background-color: #E2BD9C;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-image: url("Images/links.png"); */
+  }
+
+  #sidebar-active{
+    display: none;
+  }
+
+  .open-sidebar, .close-sidebar{
+    display: none;
+  }
+
+  .sidebar li{
+    width: 100%;
+  }
+
+  .sidebar a{
+    width: 100%;
+    font-size: 3rem;
   }
 
 .witchbackground {
-    height: 100;
-    background-size: cover;
+  background-image: url("Images/JournalBG.png");
+    height: 100%;
     background-position: center;
-    background-image: url("Images/JournalBG.png");
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -77,7 +123,7 @@ body{
     margin-right: auto;
     max-width: fit-content;
   }
-
+  
   .entrybox {
     text-align: left; 
     padding-left: 20;
@@ -100,4 +146,69 @@ body{
     height: 600; 
     margin: 0;
     margin-bottom: 0.2rem;
+  }
+
+  .menubutton{
+    display: none;
+  }
+
+  @media screen and (max-width: 480px){
+    .navrow{
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      width: 100%;
+      height: auto;
+      border: 7px solid #734932;
+      border-style: groove;
+      border-radius: 5px;
+      background-color: #E2BD9C;
+    }
+
+    .bodypage{
+      max-width: fit-content;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+
+    .navlink{
+      box-sizing: border-box;
+      height: auto;
+      width: 100%;
+      position: relative;
+      font-size: 4rem; 
+      justify-content: flex-start;
+    }
+    .open-sidebar, .close-sidebar{
+      display: block;
+    }
+    
+    #sidebar-active:checked ~ .navrow{
+      display: flex;
+    }
+
+    .entrybox {
+      text-align: left; 
+      padding-left: 20;
+    }
+
+    .entrybox  p {
+      padding: auto;
+      font-size: 2rem;
+    }
+  
+    .entrybox  h3{
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      font-size: 5rem;
+    }
   }

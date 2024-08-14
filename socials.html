@@ -3,35 +3,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>WitchTuition | Socials</title>
+    <title>Witch Tuition | Socials</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="scripthandler.js"></script>
 </head>
-    <body class="witchbackground">
-        <div class="container">
-            <div>
-                <img style="width: 704px; height: 172px;" src="Images/Logo.png" />
-            </div>
-    
-            <div style="width: 1030px; height: 98px; position: relative;" class="container">
-                <img style="width: 983px; height: 93px; position: absolute;" src="Images/links.png" />
-                <div class="navrow">
+<body class="witchbackground">
+    <div class="container">
+        <div>
+            <img style="width: 704px; height: 172px;" src="Images/Logo.png" />
+        </div>
+
+        <div style="width: 1030px; height: 98px; position: relative;" class="container">
+            <img style="width: 1030px; height: 98px; position: absolute;" src="Images/links.png" />
+            <nav>
+                <ul class="sidebar">
+                    <a class="navlink" onclick=showSidebar(false)>
+                        <i class="fa-solid fa-xmark" style="color: #29140f; font-size: 3rem;"></i>
+                    </a>
                     <a href="/WitchTuition/index.html" class="navlink">Home</a>
                     <a href="/WitchTuition/blog.html" class="navlink">Blog</a>
                     <a href="/WitchTuition/media.html" class="navlink">Screenshots</a>
                     <a href="/WitchTuition/socials.html" class="navlink">Socials</a>
-                </div>
-            </div>
+                </ul>
+                <ul class="navrow ">
+                    <a href="/WitchTuition/index.html" class="navlink hideOnMobile">Home</a>
+                    <a href="/WitchTuition/blog.html" class="navlink hideOnMobile">Blog</a>
+                    <a href="/WitchTuition/media.html" class="navlink hideOnMobile">Screenshots</a>
+                    <a href="/WitchTuition/socials.html" class="navlink hideOnMobile">Socials</a>
+                    <a class="navlink menubutton" onclick=showSidebar(true)>
+                        <i class="fa-solid fa-bars" style="color: #29140f; font-size: 3rem;"></i>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     
     <div style="width: 1000; background-color: #E2BD9C; border: 7px solid #734932; border-style: groove; border-radius: 5px; padding: 20;" class="containerrow ">
-        <img src="Images/Twirl_GIF_Dupe.gif" alt="Lucina Twirl" style="width:500px;height:500px;" class="center">
-        <div style="color: #29140f;">
+        <img src="Images/Twirl_GIF_Dupe.gif" alt="Lucina Twirl" style="width:400px;height:400px;">
+        <div style="color: #29140f;" class="rowFill">
             <h1 style="font-size: 5rem; margin: 0;"><b>ABOUT ME:</b></h1>
             <h3 style="font-size: 3rem; margin: 10; color: #734b50;">BlueNightingale</h3>
             <span>Digital Artist | CS Programmer</span>
-            <p style="font-size: 1.5rem;">Hey! Currently im working as a solo dev atm for this project.
+            <p style="font-size: 1.5rem; margin: 0;">Hey! Currently im working as a solo dev atm for this project.
                 I want to relatively keep this a hobby while I have a regular 9-5er so that I can sustain activity.
-                No plans for a kickstarter yet outside of maybe for music in the future.
-                Check out my other socials in the meantime for updates outside of here! :D
+                </p><p style="font-size: 1.5rem; margin: 0;">
+                    Things here might look work-in-progress-y, but I hope you can find interest in the process!
+                    No plans for a kickstarter yet outside of maybe for music in the future.
+                </p>
+                <p style="font-size: 1.5rem; margin: 0;">
+                    Check out my other socials in the meantime for updates outside of here! :D
+                </p>
             </p>
             <div class="navrow" style="height: 2rem;">
                 <a href="https://x.com/BlueNightingal3" class="navlink" >
