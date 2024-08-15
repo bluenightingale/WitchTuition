@@ -135,18 +135,19 @@ body{
   
   .entrybox {
     text-align: left; 
-    padding-left: 20;
+    padding: 20px;
   }
   
   .entrybox  p {
     padding: auto;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .entrybox  h3{
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .entrybox img{
