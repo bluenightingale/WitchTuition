@@ -112,7 +112,7 @@ body{
   }
 
 .witchbackground {
-  background-image: url("Images/JournalBG.png");
+  background-image: url("Images/websiteAssets/JournalBG.png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,7 +139,6 @@ body{
   }
   
   .entrybox  p {
-    padding: auto;
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
