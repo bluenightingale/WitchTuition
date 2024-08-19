@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="stylesheet.css">
     <script src="scripthandler.js"></script>
 </head>
-<body class="witchbackground">
+<body class="CanvasBackground">
     <div class="bodypage">
         <div>
             <img style="width: 704px; height: 172px;" src="Images/websiteAssets/Logo.png" />
         </div>
 
-        <div style="width: 1030px; height: 98px; position: relative;" class="container">
+        <div class="container" id="navigatorRow">
             <img style="width: 100%; height: 100%; position: absolute;" src="Images/websiteAssets/links.png" />
             <nav>
                 <ul>
@@ -36,38 +36,62 @@
         </div>
 
         <!-- Entries Here -->
-                <!-- Blog entry -->
-                <div class="entrybox updateblock">
-                    <h3><b>List until next devlog</b></h3>
-                    <i style="font-size: 1rem; margin-bottom: 0.2rem;">August 15, 2024</i>
-                    <br>
-                    <img src="Images/screenShots/EYKigpC.gif">
-                    <p>Completed</p>
-                    <ul>
-                        <li>customer classes (commoner,noble,etc)</li>
-                        <li>dialogue system</li>
-                        <li>(start)website page to track</li>
-                        <li>create more base designs</li>
-                    </ul>
-                    <p>Goals</p>
-                    <ul>
-                        <li>fixup results tracker</li>
-                        <li>give heros rarity spawn</li>
-                        <li>decor rep multiply</li>
-                    </ul>
-                    
-                    <p>
-                        Ive been working on this list since July. The results tracker is there but I feel like it needs abit more tweaking before its ok.
-                    </p>
-                    <p>I also stated awhile ago (somewhere) that once the 4.3 update changes come to godot ill try to get on track for a art overhaul. Ive kinda already been trying to 
-                        since ive been making UI recently, Ill let you guys know about its progress after this devlog but yea again ill tackle it periodically so my wrists dont fall off!
-                    </p>
-                    <p>These last ones shouldnt be too much trouble tho! Ive already implemented the heros having a rarity spawn, i just have to call them after the shop gets closed.
-                        Otherwise ill do my best to not have this devlog take more than a month to post lol!
-                    </p>
-                </div>
 
-                <!-- Blog entry -->
+            <!-- Blog entry -->
+            <div class="entrybox updateblock">
+                <h3><b>Inventory UI Update</b></h3>
+                <i style="font-size: 0.8rem; margin-bottom: 0.2rem;">August, 18 2024</i>
+                <br>
+                <img src="Images/devlog3IMG/inventoryShowoff.gif" style="object-fit: contain; height: 400px;">
+                <p>redid the inventory almost entirely to compensate the new design this weekend & added in Rael + Cherie.
+                    I was working on this UI on and off abit during my dayjob, (work wasnt that extensive) and got to work this weekend
+                    with coding for it so i can replace the wip stand in it had before.
+                </p>
+                <p>moreso entered the train of "well if i did this i might aswell add this, so now its fully redeveloped lol.
+                    as always it still depends on other factors so ill say its 90% done (•̀ᴗ•́)و ̑̑</p>
+                <p>Also added 2 new heros to fill in the Hero Star Lists for future testing </p>
+                <p><i class="fa fa-star"></i> 2 Star Magical Girl Hero Cherie (Water Hybrid one)</p>
+                <p><i class="fa fa-star"></i> 3 Star Ex-Pirate Turned Mercenary Hero Rael (Elf one)</p>
+                <img src="Images/devlog3IMG/Rael & Cherie.png">
+                <p>Fun Fact: Rael is my first and current running DnD PC :D!!</p>
+                <p>making these npc models is alot of fun and i can get them out pretty quick surprisingly, more annoying to put
+                    together tho since they all have stuff on them so they dont scale similarly. One day ill get fed up and put them all through a grinder.
+                </p>
+                <p>but for now screw future me, ima have fun with them. Now back to the rest of that list!</p>
+                <img src="Images/devlog3IMG/inventoryShowoff.png" style="object-fit: contain; height: 400px;">
+            </div>
+            <!-- Blog entry -->
+            <div class="entrybox updateblock">
+                <h3><b>List until next devlog</b></h3>
+                <i style="font-size: 1rem; margin-bottom: 0.2rem;">August 15, 2024</i>
+                <br>
+                <img src="Images/screenShots/EYKigpC.gif">
+                <p style="margin-bottom: 0px;">Completed</p>
+                <ul style="font-size: 1.5rem; margin-top: 0px;">
+                    <li>customer classes (commoner,noble,etc)</li>
+                    <li>dialogue system</li>
+                    <li>(start)website page to track</li>
+                    <li>create more base designs</li>
+                </ul>
+                <p style="margin-bottom: 0px;">Goals</p>
+                <ul style="font-size: 1.5rem; margin-top: 0px;">
+                    <li>fixup results tracker</li>
+                    <li>give heros rarity spawn</li>
+                    <li>decor rep multiply</li>
+                </ul>
+                
+                <p>
+                    Ive been working on this list since July. The results tracker is there but I feel like it needs abit more tweaking before its ok.
+                </p>
+                <p>I also stated awhile ago (somewhere) that once the 4.3 update changes come to godot ill try to get on track for a art overhaul. Ive kinda already been trying to 
+                    since ive been making UI recently, Ill let you guys know about its progress after this devlog but yea again ill tackle it periodically so my wrists dont fall off!
+                </p>
+                <p>These last ones shouldnt be too much trouble tho! Ive already implemented the heros having a rarity spawn, i just have to call them after the shop gets closed.
+                    Otherwise ill do my best to not have this devlog take more than a month to post lol!
+                </p>
+            </div>
+
+            <!-- Blog entry -->
             <div class="entrybox updateblock">
                 <h3><b>WEBSITE IS ALIVE</b></h3>
                 <i style="font-size: 1rem; margin-bottom: 0.2rem;">August 15, 2024</i>
@@ -88,7 +112,7 @@
             <!-- Blog entry -->
             <div class="entrybox updateblock">
                 <h3><b>First phase of Customers & Hero Models</b></h3>
-                <i style="font-size: 1rem; margin-bottom: 0.2rem;">August 15, 2024</i>
+                <i style="font-size: 1rem; margin-bottom: 0.2rem;">July 14, 2024</i>
                 <br>
                 <img src="Images/devlog3IMG/modelsidle.gif" style="object-fit: contain; height: auto;">
                 <p>Heres the models so far for the npc customers</p>
