@@ -272,6 +272,11 @@ body{
     height: 100px;
   }
 
+  .socialsIcons{
+    color: #734b50; 
+    font-size: 4rem;
+  }
+
   @media screen and (max-width: 430px){
 
     .CanvasBackground {
@@ -428,7 +433,7 @@ body{
     }
 
     #socialPageInfo{
-      max-width: 430px;
+      max-width: 300px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -456,6 +461,19 @@ body{
       font-size: 1rem; 
       margin: 0;
     }
+
+    #socialgif{
+      width: 200px;
+      height: 200px;
+    }
+
+    .socialsIcons{
+      font-size: 3rem;
+    }
+
+    /* #socialsRow{
+      max-width: 300;
+    } */
   }
 
   @media screen and (max-width: 390px){
@@ -614,7 +632,7 @@ body{
     }
 
     #socialPageInfo{
-      max-width: 390px;
+      max-width: 250px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -633,7 +651,7 @@ body{
   
     #socialPageInfo h3{
       font-size: 1.8rem; 
-      margin: 10; 
+      margin: 0; 
       color: #734b50;
     }
   
@@ -641,4 +659,17 @@ body{
       font-size: 1rem; 
       margin: 0;
     }
+
+    #socialgif{
+      width: 200px;
+      height: 200px;
+    }
+
+    .socialsIcons{
+      font-size: 2rem;
+    }
+
+    /* #socialsRow{
+      max-width: 200;
+    } */
   }
