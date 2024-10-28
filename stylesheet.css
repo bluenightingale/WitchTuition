@@ -230,7 +230,7 @@ body{
     margin: 0;
   } */
 
-  .entrybox img{
+  .entrybox img,.entrybox video{
     object-fit: contain; 
     width: 800px; 
     height: auto; 
@@ -396,7 +396,7 @@ body{
       padding-left: 10;
     }
 
-    .entrybox img{
+    .entrybox img, .entrybox video{
       object-fit: cover; 
       width: 350px; 
       height: auto; 
@@ -595,7 +595,7 @@ body{
       padding-left: 10;
     }
 
-    .entrybox img{
+    .entrybox img, .entrybox video{
       object-fit: cover; 
       width: 320px; 
       height: auto; 
